@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -6,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/components/ui/use-toast";
-import { Coins, Gift, Award, ShoppingBag, Coffee, Bike, Tree, Leaf } from 'lucide-react';
+import { Coins, Gift, Award, ShoppingBag, Coffee, Bike, Trees, Leaf } from 'lucide-react';
 
 // Mock rewards data
 const availableRewards = [
@@ -49,7 +48,7 @@ const availableRewards = [
     category: 'Conservation',
     cost: 50,
     partner: 'TreeFuture',
-    icon: <Tree className="h-5 w-5" />,
+    icon: <Trees className="h-5 w-5" />,
     expiry: 'Never'
   },
   { 
@@ -84,7 +83,7 @@ const redeemedRewards = [
     partner: 'TreeFuture',
     redeemed: '1 week ago',
     expires: 'Never',
-    icon: <Tree className="h-5 w-5" />,
+    icon: <Trees className="h-5 w-5" />,
     code: 'Certificate #TF-29853'
   },
 ];
